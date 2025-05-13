@@ -1,0 +1,143 @@
+.solar-system-container {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 180px);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+  
+/* Солнце */
+.sun {
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 0 0 80px rgba(253, 184, 19, 0.8);
+  z-index: 5;
+}
+  
+/* Орбиты */
+.planet-orbit {
+  position: absolute;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  z-index: 2;
+}
+  
+/* Контейнер для панели информации */
+.planet-info-container {
+  position: absolute;
+  z-index: 30;
+  transition: all 0.3s ease-out;
+}
+  
+/* Кнопка закрытия информационной панели */
+.close-info-button {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: 30px;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  color: white;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 31;
+  transition: background-color 0.2s;
+}
+  
+  .close-info-button:hover {
+    background-color: rgba(255, 0, 0, 0.5);
+  }
+  
+  /* Индикатор загрузки */
+  .solar-system-loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+  }
+  
+  .loading-spinner {
+    width: 60px;
+    height: 60px;
+    border: 5px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: #7eb0ff;
+    animation: spin 1s ease-in-out infinite;
+    margin-bottom: 20px;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Сообщение об ошибке */
+  .solar-system-error {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(255, 0, 0, 0.5);
+    border-radius: 8px;
+    padding: 30px;
+    color: white;
+    text-align: center;
+    max-width: 500px;
+    z-index: 1000;
+  }
+  
+  .solar-system-error h2 {
+    color: #ff5555;
+    margin-top: 0;
+  }
+  
+  .solar-system-error button {
+    background-color: #2962ff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.2s;
+  }
+  
+  .solar-system-error button:hover {
+    background-color: #0039cb;
+  }
+  
+  @media (max-width: 768px) {
+    .solar-system-container {
+      height: calc(100vh - 120px);
+    }
+    
+    .sun {
+      transform: scale(0.6);
+    }
+    
+    .planet-info-container {
+      left: 50% !important;
+      transform: translateX(-50%);
+      bottom: 20px !important;
+      top: auto !important;
+    }
+  }

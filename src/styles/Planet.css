@@ -1,0 +1,92 @@
+.planet {
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    z-index: 10;
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+  }
+  
+  .planet:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+  }
+  
+  .planet-selected {
+    z-index: 20;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.9);
+  }
+  
+  /* Кольца Сатурна */
+  .saturn-rings {
+    position: absolute;
+    width: 180%;
+    height: 40%;
+    left: -40%;
+    top: 30%;
+    background-color: transparent;
+    border: 2px solid rgba(235, 202, 146, 0.6);
+    border-radius: 50%;
+    transform: rotateX(70deg);
+  }
+  
+  .saturn-rings::before {
+    content: '';
+    position: absolute;
+    width: 90%;
+    height: 80%;
+    left: 5%;
+    top: 10%;
+    background-color: transparent;
+    border: 1px solid rgba(235, 202, 146, 0.4);
+    border-radius: 50%;
+  }
+  
+  /* Анимация вращения для планет */
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Каждая планета вращается с разной скоростью */
+  .planet[title="Mercury"] {
+    animation: rotate 20s linear infinite;
+  }
+  
+  .planet[title="Venus"] {
+    animation: rotate 30s linear infinite;
+  }
+  
+  .planet[title="Earth"] {
+    animation: rotate 36.5s linear infinite;
+  }
+  
+  .planet[title="Mars"] {
+    animation: rotate 40s linear infinite;
+  }
+  
+  .planet[title="Jupiter"] {
+    animation: rotate 12s linear infinite;
+  }
+  
+  .planet[title="Saturn"] {
+    animation: rotate 12.5s linear infinite;
+  }
+  
+  .planet[title="Uranus"] {
+    animation: rotate 14s linear infinite;
+  }
+  
+  .planet[title="Neptune"] {
+    animation: rotate 16s linear infinite;
+  }
+  
+  .planet[title="Sun"] {
+    box-shadow: 0 0 50px rgba(253, 184, 19, 0.8);
+    animation: none;
+  }
+  

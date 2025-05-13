@@ -1,0 +1,96 @@
+.facts-panel {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    padding: 15px;
+    color: white;
+    z-index: 50;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
+    transition: opacity 0.5s, transform 0.5s;
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  
+  .facts-panel.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .facts-panel h3 {
+    margin: 0 0 10px 0;
+    color: #7eb0ff;
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  .facts-panel h4 {
+    margin: 0 0 12px 0;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 600;
+  }
+  
+  .facts-panel p {
+    margin: 0 0 15px 0;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  .facts-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .facts-nav button {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .facts-nav button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  .facts-nav span {
+    font-size: 12px;
+    color: #aaa;
+  }
+  
+  @media (max-width: 768px) {
+    .facts-panel {
+      position: fixed;
+      top: auto;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      border-radius: 12px 12px 0 0;
+      padding: 12px 16px;
+      box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
+      z-index: 200;
+    }
+    
+    .facts-content {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+  }
+  
