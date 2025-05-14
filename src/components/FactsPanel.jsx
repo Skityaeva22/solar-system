@@ -12,8 +12,8 @@ const FactsPanel = () => {
       setIsVisible(false);
 
       setTimeout(() => {
-        setCurrentFactIndex((prevIndex) => 
-          (prevIndex + 1) % factsData.length
+        setCurrentFactIndex(
+          (prevIndex) => (prevIndex + 1) % factsData.facts.length
         );
         setIsVisible(true);
       }, 500);
@@ -26,8 +26,8 @@ const FactsPanel = () => {
   const nextFact = () => {
     setIsVisible(false);
     setTimeout(() => {
-      setCurrentFactIndex((prevIndex) => 
-        (prevIndex + 1) % factsData.length
+      setCurrentFactIndex(
+        (prevIndex) => (prevIndex + 1) % factsData.facts.length
       );
       setIsVisible(true);
     }, 300);
@@ -37,13 +37,13 @@ const FactsPanel = () => {
     setIsVisible(false);
     setTimeout(() => {
       setCurrentFactIndex((prevIndex) =>
-        prevIndex === 0 ? factsData.length - 1 : prevIndex - 1
+        prevIndex === 0 ? factsData.facts.length - 1 : prevIndex - 1
       );
       setIsVisible(true);
     }, 300);
   };
 
-  const currentFact = factsData[currentFactIndex];
+  const currentFact = factsData.facts[currentFactIndex];
 
   return (
     <div className={`facts-panel ${isVisible ? "visible" : ""}`}>
@@ -54,7 +54,7 @@ const FactsPanel = () => {
         <div className="facts-nav">
           <button onClick={prevFact}>&lt;</button>
           <span>
-            {currentFactIndex + 1} / {factsData.length}
+            {currentFactIndex + 1} / {factsData.facts.length}
           </span>
           <button onClick={nextFact}>&gt;</button>
         </div>

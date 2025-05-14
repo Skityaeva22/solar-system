@@ -11,6 +11,7 @@ import Planet from "./Planet";
 import PlanetInfo from "./PlanetInfo";
 import PlanetModal from "./PlanetModal";
 import FactsPanel from "./FactsPanel";
+import QuizPanel from "./QuizPanel";
 import "../styles/SolarSystem.css";
 
 const SolarSystem = () => {
@@ -205,6 +206,8 @@ const SolarSystem = () => {
   // Стиль курсора в зависимости от состояния перемещения
   const cursorStyle = isPanning ? 'grabbing' : 'grab';
 
+  const questionsData = require("../services/questions.json");
+
   return (
     <div 
       className="solar-system-container" 
@@ -307,6 +310,9 @@ const SolarSystem = () => {
 
       {/* Панель с интересными фактами */}
       <FactsPanel />
+
+      {/* Квиз */}
+      <QuizPanel questions={questionsData.questions} />
     </div>
   );
 };

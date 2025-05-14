@@ -1,0 +1,155 @@
+{
+  "questions": [
+    {
+      "question": "Является ли Солнце звездой?",
+      "answers": [
+        {"text": "Да", "correct": true},
+        {"text": "Нет", "correct": false}
+      ]
+    },
+    {
+      "question": "Сколько планет в Солнечной системе?",
+      "answers": [
+        {"text": "8", "correct": true},
+        {"text": "9", "correct": false},
+        {"text": "10", "correct": false}
+      ]
+    },
+    {
+      "question": "Какая планета известна своими кольцами?",
+      "answers": [
+        {"text": "Сатурн", "correct": true},
+        {"text": "Юпитер", "correct": false},
+        {"text": "Уран", "correct": false}
+      ]
+    },
+    {
+      "question": "Может ли человек выжить в открытом космосе без скафандра?",
+      "answers": [
+        {"text": "Нет", "correct": true},
+        {"text": "Да", "correct": false}
+      ]
+    },
+    {
+      "question": "Как называется галактика, в которой находится Земля?",
+      "answers": [
+        {"text": "Млечный Путь", "correct": true},
+        {"text": "Андромеда", "correct": false},
+        {"text": "Треугольник", "correct": false}
+      ]
+    },
+    {
+      "question": "Является ли Луна планетой?",
+      "answers": [
+        {"text": "Нет", "correct": true},
+        {"text": "Да", "correct": false}
+      ]
+    },
+    {
+      "question": "Какой газ преобладает в атмосфере Земли?",
+      "answers": [
+        {"text": "Азот", "correct": true},
+        {"text": "Кислород", "correct": false},
+        {"text": "Углекислый газ", "correct": false}
+      ]
+    },
+    {
+      "question": "Бывал ли человек на Марсе?",
+      "answers": [
+        {"text": "Нет", "correct": true},
+        {"text": "Да", "correct": false}
+      ]
+    },
+    {
+      "question": "Как называется ближайшая к Солнцу планета?",
+      "answers": [
+        {"text": "Меркурий", "correct": true},
+        {"text": "Венера", "correct": false},
+        {"text": "Земля", "correct": false}
+      ]
+    },
+    {
+      "question": "Сколько спутников у Марса?",
+      "answers": [
+        {"text": "2", "correct": true},
+        {"text": "1", "correct": false},
+        {"text": "3", "correct": false}
+      ]
+    },
+    {
+      "question": "Может ли на Луне быть землетрясение?",
+      "answers": [
+        {"text": "Да (лунотрясение)", "correct": true},
+        {"text": "Нет", "correct": false}
+      ]
+    },
+    {
+      "question": "Какой космический аппарат первым достиг поверхности Марса?",
+      "answers": [
+        {"text": "Марс-3", "correct": true},
+        {"text": "Викинг-1", "correct": false},
+        {"text": "Кьюриосити", "correct": false}
+      ]
+    },
+    {
+      "question": "Есть ли у Венеры спутники?",
+      "answers": [
+        {"text": "Нет", "correct": true},
+        {"text": "Да", "correct": false}
+      ]
+    },
+    {
+      "question": "Какой год считается годом первого полета человека в космос?",
+      "answers": [
+        {"text": "1961", "correct": true},
+        {"text": "1957", "correct": false},
+        {"text": "1969", "correct": false}
+      ]
+    },
+    {
+      "question": "Может ли черная дыра поглотить Солнце?",
+      "answers": [
+        {"text": "Теоретически да", "correct": true},
+        {"text": "Нет", "correct": false}
+      ]
+    },
+    {
+      "question": "Как называется процесс, при котором звезда взрывается?",
+      "answers": [
+        {"text": "Сверхновая", "correct": true},
+        {"text": "Черная дыра", "correct": false},
+        {"text": "Нейтронная звезда", "correct": false}
+      ]
+    },
+    {
+      "question": "Сколько длился первый космический полет Юрия Гагарина?",
+      "answers": [
+        {"text": "108 минут", "correct": true},
+        {"text": "90 минут", "correct": false},
+        {"text": "2 часа", "correct": false}
+      ]
+    },
+    {
+      "question": "Есть ли вода на Марсе?",
+      "answers": [
+        {"text": "Да (в виде льда)", "correct": true},
+        {"text": "Нет", "correct": false}
+      ]
+    },
+    {
+      "question": "Какой телескоп был запущен в 2021 году для замены Хаббла?",
+      "answers": [
+        {"text": "Джеймс Уэбб", "correct": true},
+        {"text": "Кеплер", "correct": false},
+        {"text": "Спитцер", "correct": false}
+      ]
+    },
+    {
+      "question": "Может ли в космосе распространяться звук?",
+      "answers": [
+        {"text": "Нет", "correct": true},
+        {"text": "Да", "correct": false}
+      ]
+    }
+  ]
+}
